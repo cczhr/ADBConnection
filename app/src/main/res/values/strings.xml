@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ADB Connection</string>
+    <string name="device_name" >设备名:</string>
+    <string name="internet_ip" formatted="false">公网: %s</string>
+    <string name="intranet_ip" formatted="false">内网: %s</string>
+    <string name="start" >启动</string>
+    <string name="stop" >停止</string>
+    <string name="boot_up" >开机启动</string>
+    <string name="save" >保存</string>
+    <string name="server_chan" >Server酱SCKEY:</string>
+    <string name="refresh_time" >公网地址刷新间隔/s</string>
+    <string name="server" >获取公网地址服务器:</string>
+    <string name="port" >端口:</string>
+    <string name="test" >测试Server酱</string>
+</resources>
