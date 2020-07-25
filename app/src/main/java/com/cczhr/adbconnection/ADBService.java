@@ -76,7 +76,9 @@ public class ADBService extends Service {
                                 tIp = ip;
                                 String text = null;
                                 try {
-                                    text = URLEncoder.encode(Utils.getDeviceName(ADBService.this) + "连接命令:adb connect " + tIp+":"+Utils.getPort(ADBService.this), "UTF-8");
+                                    String intranetIp = getString(R.string.intranet_ip, "adb connect " + Utils.getIpAddressByWifi(ADBService.this) + ":" + Utils.getPort(ADBService.this));
+                                    String internetIp = getString(R.string.internet_ip, "adb connect " + tIp + ":" + Utils.getPort(ADBService.this));
+                                    text = URLEncoder.encode(Utils.getDeviceName(ADBService.this)+internetIp+intranetIp, "UTF-8");
                                 } catch (UnsupportedEncodingException e) {
                                     e.printStackTrace();
                                 }
